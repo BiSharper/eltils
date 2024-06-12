@@ -1,0 +1,13 @@
+[package]
+name = "etils"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+proc-macro2 = { version = "1.0.85", optional = true }
+quote2 = { version =  "0.7.0", optional = true }
+syn = { version = "2.0.66", features = ["full"], optional = true }
+
+[features]
+default = ["macro_utils"]
+macro_utils = ["proc-macro2", "quote2", "syn"]

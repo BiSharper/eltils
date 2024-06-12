@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+   "src/etils",
+   "src/etils_macros"
+]
